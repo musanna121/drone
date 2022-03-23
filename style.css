@@ -1,0 +1,94 @@
+.frame{
+    position: relative;
+    height: 1080px;
+    transition-duration: 2s;
+    
+}
+.one,
+.two,
+.three,
+.four,
+.five,
+.six{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);    
+    opacity: 1;
+    transition-duration: 2s;
+}
+.one{
+    top: 30%;
+    /* border: 1px solid red; */
+    z-index: 6;
+}
+.two{
+    top: 40%;
+    /* border: 1px solid red; */
+    z-index: 5;
+}
+.three{
+    top: 45%;
+    /* border: 1px solid red; */
+    z-index: 4;
+    left: 49.45%;
+
+}
+.four{
+    top: 50%;
+    /* border: 1px solid red; */
+    z-index: 3;
+}
+.five{
+    top: 55%;
+    /* border: 1px solid red; */
+    z-index: 2;
+}
+.six{
+    top: 65%;
+    /* border: 1px solid red; */
+    z-index: 1;
+}
+.frame:hover .one{
+    opacity: 1;
+    top: 55%; 
+    
+}
+.frame:hover .two{
+    opacity: 1;
+    top: 55%; 
+    
+}
+.frame:hover .three{
+    opacity: 1;
+    top: 53%;
+    transform: translate(-56%);
+    left: 31.4%;
+    transition-delay: 0ms;
+    animation-name: fan;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.frame:hover .four{
+    opacity: 1;
+    top: 58%;
+    z-index: 1; 
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+   
+}
+.frame:hover .five{
+    opacity: 1;
+    top: 55%; 
+    
+}
+.frame:hover .six{
+    opacity: 1;
+    top: 60%; 
+   
+}
+@keyframes fan {
+    from{left:49.45; transform: rotate(0deg);transform-style: flat;}
+    to{ left:31.4%; transform: rotateY(72000deg);transform-style: preserve-3d;}
+    
+}
