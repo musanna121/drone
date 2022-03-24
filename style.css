@@ -1,8 +1,10 @@
 .frame{
     position: relative;
-    height: 1080px;
+    height: 400px;
+    width: 900px;
     transition-duration: 2s;
     background-color: antiquewhite;
+    border: 1px splid red ;
     
 }
 .one,
@@ -28,10 +30,11 @@
     z-index: 5;
 }
 .three{
-    top: 45%;
+    top: 38%;
     /* border: 1px solid red; */
     z-index: 4;
-    left: 49.45%;
+    left: 92px;
+    transform: unset;
 
 }
 .four{
@@ -62,8 +65,6 @@
 .frame:hover .three{
     opacity: 1;
     top: 53%;
-    transform: translate(-56%);
-    left: 31.4%;
     transition-delay: 0ms;
     animation-name: fan;
     animation-delay: 0s;
@@ -89,7 +90,7 @@
    
 }
 @keyframes fan {
-    from{left:49.45; transform: rotate(0deg);transform-style: flat;}
-    to{ left:31.4%; transform: rotateY(72000deg);transform-style: preserve-3d;}
+    from{ transform: rotate(0deg);}
+    to{ transform: rotateY(360deg);}
     
 }
