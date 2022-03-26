@@ -71,7 +71,7 @@
     opacity: 1;
     top: 534px;
     left: 98px;
-    transition-delay: 0ms;
+    transition-delay: 0s;
     animation-name: fan;
     animation-delay: 2s;
     animation-duration: 1s;
